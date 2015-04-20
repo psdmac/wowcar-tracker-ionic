@@ -1,0 +1,14 @@
+<ion-view view-title="設定車輛">
+  <ion-content>
+    <div class="list">
+      <label class="item item-radio" ng-repeat="list in lists">
+        <input type="radio" name="group" ng-model="car.info.id" ng-value="list.id" ng-change="change(list);">
+        <div class="item-content">
+          {{list.name}} - {{list.id}}
+        </div>
+        <i class="radio-icon ion-checkmark"></i>
+      </label>
+    </div>
+
+  </ion-content>
+</ion-view>

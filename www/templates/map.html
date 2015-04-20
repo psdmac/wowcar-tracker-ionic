@@ -1,0 +1,15 @@
+<ion-view view-title="全國通">
+  <ion-content scroll="false">
+      <div id="map-wrapper" style="width: 100%; height: 100%;" marker-save ng-init="followCenter=true">
+        <div id="map-canvas" style="width: 100%; height: 100%;"></div>
+        <button id="btn-home" ng-click="followCenter=!followCenter;" class="btn navbar-btn btn-default glyphicon glyphicon-screenshot" ng-class="{ on: followCenter }"></button>
+      </div>
+        
+<!--         <nav id="footer" class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+            <button id="btn-home" class="btn navbar-btn btn-default glyphicon glyphicon-screenshot"></button>    
+            <button id="btn-reset" class="btn btn-default glyphicon">Reset</button>
+            <button id="btn-pace" data-id="false" class="btn navbar-btn">Aggressive</button>
+            <button id="btn-enabled" class="btn navbar-btn" data-id="true">Start</button>
+        </nav> -->
+  </ion-content>
+</ion-view>
